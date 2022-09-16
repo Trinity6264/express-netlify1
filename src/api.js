@@ -48,7 +48,7 @@ router.post("/", (req, res) => {
          collection.deleteOne(query, (err, result) => {
              if (err) throw err;
          })
-         res.send("1 document deleted.")
+         res.send("1 document delete")
      })
 
 app.use("/.netlify/functions/api", router)
